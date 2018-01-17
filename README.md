@@ -1,13 +1,12 @@
-calculadora
+# Workshop React and PWA
 
+## Build a Akademia Kalculator
 
-- vai ter 1 modo (basico)
-
-- alteração
-- 1st change
+- One mode (basic)
+- 99 points in Lighthouse Audit
+- Everyone will get part of code
 
 Demo:
 https://safe-oasis-85394.herokuapp.com/
 
-Screenshot:
 ![Screenshot](https://github.com/stvkoch/akademia-react-pwa-workshop/raw/master/screenshot.png)
