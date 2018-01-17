@@ -67,7 +67,7 @@ class App extends Component {
     return (
       <div className="application" ref={r => this.app = r}>
         <div className="log">
-          {this.state.log.map((log, i) => (<div key={[log,i].join('_')} onClick={()=>this.setState({input:log})}>{log}</div>))}
+          {this.state.log.map((log, i) => (<div key={[log,i].join('_')} onTouchTap={()=>this.setState({input:log})}>{log}</div>))}
         </div>
         <div className="calculator">
           <div className="display">
@@ -82,37 +82,37 @@ class App extends Component {
           </div>
           <div className="mode-basic">
             <div className="operators-top container">
-              <button onClick={this.removeLastInput}>&lt;</button>
-              <button onClick={this.cleanAllInput}>C</button>
-              <button onClick={this.addToInput}>÷</button>
-              <button onClick={this.addToInput}>×</button>
+              <button onTouchTap={this.removeLastInput}>&lt;</button>
+              <button onTouchTap={this.cleanAllInput}>C</button>
+              <button onTouchTap={this.addToInput}>÷</button>
+              <button onTouchTap={this.addToInput}>×</button>
             </div>
             <div className="container">
               <div className="num-pad">
                 <div className="container">
-                  <button onClick={this.addToInput}>7</button>
-                  <button onClick={this.addToInput}>8</button>
-                  <button onClick={this.addToInput}>9</button>
+                  <button onTouchTap={this.addToInput}>7</button>
+                  <button onTouchTap={this.addToInput}>8</button>
+                  <button onTouchTap={this.addToInput}>9</button>
                 </div>
                 <div className="container">
-                  <button onClick={this.addToInput}>4</button>
-                  <button onClick={this.addToInput}>5</button>
-                  <button onClick={this.addToInput}>6</button>
+                  <button onTouchTap={this.addToInput}>4</button>
+                  <button onTouchTap={this.addToInput}>5</button>
+                  <button onTouchTap={this.addToInput}>6</button>
                 </div>
                 <div className="container">
-                  <button onClick={this.addToInput}>1</button>
-                  <button onClick={this.addToInput}>2</button>
-                  <button onClick={this.addToInput}>3</button>
+                  <button onTouchTap={this.addToInput}>1</button>
+                  <button onTouchTap={this.addToInput}>2</button>
+                  <button onTouchTap={this.addToInput}>3</button>
                 </div>
                 <div className="container num-pad-row-comma">
-                  <button  onClick={this.addToInput}>0</button>
-                  <button onClick={this.addToInput}>,</button>
+                  <button  onTouchTap={this.addToInput}>0</button>
+                  <button onTouchTap={this.addToInput}>.</button>
                 </div>
               </div>
               <div className="operators-right">
-                <button onClick={this.addToInput}>-</button>
-                <button onClick={this.addToInput}>+</button>
-                <button onClick={this.resolve}>=</button>
+                <button onTouchTap={this.addToInput}>-</button>
+                <button onTouchTap={this.addToInput}>+</button>
+                <button onTouchTap={this.resolve}>=</button>
               </div>
             </div>
           </div>
