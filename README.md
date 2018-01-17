@@ -8,3 +8,6 @@ calculadora
 
 Demo:
 https://safe-oasis-85394.herokuapp.com/
+
+Screenshot:
+![Screenshot](https://github.com/stvkoch/akademia-react-pwa-workshop/raw/master/screenshot.png)
