@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Kalculator PWA KCSit Akademia" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    </style>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Kalculator</title>
+    <style>
+      * { padding: 0; margin: 0; font-family: 'Roboto', sans-serif;}
+      html, body {
+          min-height: 100% !important;
+          height: 100%;
+          background-color: #0f0f0f;
+          color: #fff;
+          font-size: 2rem;
+      }
+      #root {
+        height: 100%;
+      }
+
+      html {
+          height: 100%;
+      }
+      .log > div {
+        font-size: 1rem;
+      }
+
+      .application{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+      }
+
+      .calculator {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+
+
+      .calculator .display input {
+        width: 95%;
+        font-size: 2rem;
+        border: none;
+        padding: 2.5%;
+        background-color: #0f0f0f;
+        color: #fff;
+        text-align: right;
+        outline: none;
+      }
+
+      .calculator  button {
+        /* padding: 12px; */
+        background-color: #2e2e2e;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .calculator button {
+        font-size: 2rem;
+        background-color: #343434;
+        border: 2px solid rgb(17, 17, 17);
+        color: #FFF;
+      }
+
+      .num-pad .container button {
+        flex: 1;
+      }
+
+      .num-pad {
+        flex: 3;
+      }
+
+      button {
+        /* margin: 0.2%; */
+        outline: none;
+      }
+      button:active {
+        opacity: 0.5;
+      }
+
+      .operators-right button {
+        /* margin: 0.6%; */
+        background-color: #b703a1;
+      }
+
+      .operators-top button {
+        flex: 1;
+        background-color: #b703a1;
+        /* margin-top: 0.2%; */
+        /* margin-right: 0.2%; */
+        /* margin-bottom: 0.1%; */
+        /* margin-right: 0.1%; */
+      }
+
+      .operators-top {
+        display: flex;
+      }
+
+      .operators-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .operators-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .operators-right > button:nth-child(3) {
+        flex: 2;
+        background-color: #710157;
+      }
+
+      .num-pad-row-comma > button:nth-child(1) {
+        flex: 2;
+      }
+      label {
+        display: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: #0f0f0f;">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
